@@ -4,7 +4,6 @@ inputs:
   dockerhub-password:  # id of input
     description: 'dockerhub-password'
     required: true
-    default: ${{ secrets.DOCKERHUB_PASSWORD }}
 #outputs:
 #  time: # id of output
 #    description: 'The time we greeted you'
