@@ -6935,8 +6935,8 @@ const exec = __webpack_require__(925);
 
 try {
   const image = 'adriengentil/hello-actions'
-  const build = exec.exec('docker', ['build', '-t', image, '.']);
-  build.then(exec.exec('docker', ['push', image]));
+  exec.exec('docker', ['build', '-t', image, '.'])
+           .then(exec.exec('docker', ['push', image]));
 } catch (error) {
   core.setFailed(error.message);
 }
